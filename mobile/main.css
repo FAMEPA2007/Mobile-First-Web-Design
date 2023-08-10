@@ -1,0 +1,44 @@
+.menu{
+    background-color: brown;
+    display: none;
+}
+.name::selection{
+    color:white;
+}
+.menu::items li{
+list-style: none;
+margin-left: 15px ;
+}
+.menu::items li a{
+    text-decoration: none;
+    color:white;
+}
+@media only screen and (min-width: 600px)
+{
+   .menu{
+    justify-content: space-between;
+   }
+    
+        
+}
+  
+.article{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    justify-content: space-evenly;
+}
+.article section{
+    width: 100px;
+    height: 10rem;
+    background-color: aqua;
+}
+@media only screen and (min-width: 200px)
+{ 
+    .article section{
+       width: 40%;
+    height: 100vh;
+    flex-direction:column;
+ 
+    }
+}
